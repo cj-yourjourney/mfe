@@ -16,7 +16,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright 123333© '}
       <MaterialLink component={Link} to="/" color="inherit">
-        Your Web is here now!!!
+        Your Web is here wow!!!
       </MaterialLink>{' '}
       {new Date().getFullYear()}
       {'.'}
