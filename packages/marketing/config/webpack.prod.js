@@ -1,14 +1,13 @@
 const { merge } = require('webpack-merge')
-const commonConfig = require('./webpack.common.js')
-const packageJson = require('../package.json')
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
+const packageJson = require('../package.json')
+const commonConfig = require('./webpack.common')
 
 const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    // publicPath: '/marketing/latest/'
-    publicPath: 'https://d12sji3a8coigr.cloudfront.net/marketing/latest/'
+    publicPath: '/marketing/latest/'
   },
   plugins: [
     new ModuleFederationPlugin({
