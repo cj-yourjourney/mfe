@@ -7,7 +7,7 @@ export default () => {
   return (
     <BrowserRouter>
       <div>
-        <h1>Hi there! now!!! container-dev branch</h1>
+        <h1>Hi there! now!!!</h1>
         <Header />
         <MarketingApp />
       </div>
